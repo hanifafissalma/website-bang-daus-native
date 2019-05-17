@@ -38,6 +38,7 @@ a {
 
 a:hover {
   text-decoration: none;
+  color:#00c8d7;
 }
 
 a a:focus {
@@ -147,12 +148,43 @@ ul li, ol li {
   text-align:center;
   margin-left:-30px;
 }
-
+.corporate-image{
+  clear: both;
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+  margin-bottom: 1.5em;
+  margin-top: 1.75em;
+}
 .subhead{
   background-color:#333;
   height:250px;
   color:whitesmoke;
   padding:100px 50px;
+}
+.profile-image{
+  border-radius:100%;
+  -webkit-filter: grayscale(1);
+  height:200px;
+  width:200px;
+  margin-left:auto;
+  margin-right:auto;
+  clear: both;
+  display: block;
+}
+.profile-image:hover{
+  -webkit-filter: none;
+}
+.profile-name{
+  color:#333;
+  font-weight:600;
+  font-size:18px;
+  text-align:center;
+}
+.subword{
+  color:#00c8d7;
+  font-weight:600;
+  font-size:20px;
 }
 .breadcrumbs-inner{
   background-color:#1d1d1d;
