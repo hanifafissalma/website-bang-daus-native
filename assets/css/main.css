@@ -91,6 +91,76 @@ ul li, ol li {
   text-align: center;
 }
 
+.sub-title{
+  text-align:center;
+  font-size:22px;
+  margin:20px;
+}
+.divider-inner{
+  border:1px solid #252525;
+  width:25%;
+  margin:0 auto;
+}
+
+.our-service{
+  border:2px solid #bbb;
+  background-color:white;
+  width:200px;
+  border-radius:100%;
+  padding:30px 0;
+  justify-content: center;
+  height:200px;
+  color:#bbb;
+  margin:10px;
+  text-align:center;
+  overflow:hidden;
+  transition:         0.08s ease-in;
+  -o-transition:      0.08s ease-in;
+  -ms-transition:     0.08s ease-in;
+  -moz-transition:    0.08s ease-in;
+  -webkit-transition: 0.08s ease-in;
+}
+
+.our-service:hover{
+  color:whitesmoke;
+}
+
+.our-service:before {
+  content: "";
+  position: absolute;
+  background: #00b4d9;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  top: 100%;
+  z-index: -1;
+  -webkit-transition: top 0.09s ease-in;
+}
+
+.our-service:hover:before {
+  top: 0;
+}
+.info-service{
+  color:#00b4d9;
+  font-size:18px;
+  font-weight:600;
+  text-align:center;
+  margin-left:-30px;
+}
+
+.subhead{
+  background-color:#333;
+  height:250px;
+  color:whitesmoke;
+  padding:100px 50px;
+}
+.breadcrumbs-inner{
+  background-color:#1d1d1d;
+  float:right;
+  padding:12px 10px 8px;
+  margin-top:50px;
+  font-weight:600;
+}
 .section-title-header p {
   text: center;
   font-weight: 400;
@@ -104,7 +174,7 @@ ul li, ol li {
   text-align: center;
   letter-spacing: 1px;
   line-height: 1;
-  margin-bottom: 48px;
+  margin-bottom: 20px;
   padding: 0 10px;
   position: relative;
 }
@@ -910,8 +980,9 @@ a:not([href]):not([tabindex]):focus, a:not([href]):not([tabindex]):hover {
 
 .services-item {
   background: #fff;
-  border-radius: 4px;
-  padding: 48px 20px;
+  border-radius: 100%;
+  padding: 20px;
+  height:250px;
   box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.2);
   text-align: center;
   transition: all 0.3s ease-in-out 0s;
@@ -919,7 +990,18 @@ a:not([href]):not([tabindex]):focus, a:not([href]):not([tabindex]):hover {
   -webkit-transition: all 0.3s ease-in-out 0s;
   -o-transition: all 0.3s ease-in-out 0s;
 }
-
+.service-item:before{
+  position: absolute;
+  left: 80px;
+  display: block;
+  width: 85%;
+  height: 0;
+  border-top: 1px dashed #bbb;
+  content: "";
+}
+.service-icon:hover{
+  background-color:#00c8d7;
+}
 .services-item .icon i {
   font-size: 42px;
   margin-bottom: 15px;
